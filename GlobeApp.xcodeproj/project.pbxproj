@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2106661E04B1C700C7C49B /* ClubsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */; };
+		0D2106691E04B89C00C7C49B /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D2106681E04B89C00C7C49B /* images.jpeg */; };
+		0D21066B1E04BB6A00C7C49B /* ClubMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */; };
 		2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1371E02E576007B6B2E /* SignInVC.swift */; };
 		2500D13A1E02F063007B6B2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1391E02F063007B6B2E /* Constants.swift */; };
 		2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D13B1E02F253007B6B2E /* RegisterVC.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsTableVC.swift; sourceTree = "<group>"; };
+		0D2106681E04B89C00C7C49B /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubMainCell.swift; sourceTree = "<group>"; };
 		2500D1371E02E576007B6B2E /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2500D1391E02F063007B6B2E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2500D13B1E02F253007B6B2E /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2106671E04B88800C7C49B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0D2106681E04B89C00C7C49B /* images.jpeg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		2500D14D1E03011C007B6B2E /* ProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0D2106671E04B88800C7C49B /* Assets */,
 				814C3AC81B69877600E307BB /* Images.xcassets */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -96,7 +111,7 @@
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
-				81BA81471A49DA1800E65899 /* ParseStarterProject */,
+				81BA81471A49DA1800E65899 /* GlobeApp */,
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
@@ -111,16 +126,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
+		81BA81471A49DA1800E65899 /* GlobeApp */ = {
 			isa = PBXGroup;
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				2500D1371E02E576007B6B2E /* SignInVC.swift */,
+				0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */,
 				2500D13B1E02F253007B6B2E /* RegisterVC.swift */,
+				0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */,
 				2500D13D1E02F2FA007B6B2E /* LoginVC.swift */,
 				2500D1391E02F063007B6B2E /* Constants.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 			);
+			name = GlobeApp;
 			path = ParseStarterProject;
 			sourceTree = "<group>";
 		};
@@ -212,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
+				0D2106691E04B89C00C7C49B /* images.jpeg in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				2500D1431E02FEB2007B6B2E /* ProgressHUD.bundle in Resources */,
 			);
@@ -224,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D21066B1E04BB6A00C7C49B /* ClubMainCell.swift in Sources */,
 				2500D1441E02FEB2007B6B2E /* ProgressHUD.m in Sources */,
+				0D2106661E04B1C700C7C49B /* ClubsTableVC.swift in Sources */,
 				2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */,
 				2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
