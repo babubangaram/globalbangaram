@@ -10,11 +10,11 @@ import UIKit
 
 class ClubMainCell: PFTableViewCell {
     
+  
     @IBOutlet var clubImage: UIImageView!
     
-    @IBOutlet var clubIntroLabel: UILabel!
     
-    
+    @IBOutlet var clubName: UILabel!
     
 
 }
