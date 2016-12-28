@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D2106661E04B1C700C7C49B /* ClubsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */; };
 		0D2106691E04B89C00C7C49B /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D2106681E04B89C00C7C49B /* images.jpeg */; };
-		0D21066B1E04BB6A00C7C49B /* ClubMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */; };
+		0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4A1E14595600642455 /* ClubsVC.swift */; };
+		0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */; };
+		0D7EBC4F1E14609000642455 /* sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4E1E14609000642455 /* sample.swift */; };
 		2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1371E02E576007B6B2E /* SignInVC.swift */; };
 		2500D13A1E02F063007B6B2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1391E02F063007B6B2E /* Constants.swift */; };
 		2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D13B1E02F253007B6B2E /* RegisterVC.swift */; };
@@ -31,9 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsTableVC.swift; sourceTree = "<group>"; };
 		0D2106681E04B89C00C7C49B /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
-		0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubMainCell.swift; sourceTree = "<group>"; };
+		0D7EBC4A1E14595600642455 /* ClubsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsVC.swift; sourceTree = "<group>"; };
+		0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsTVCell.swift; sourceTree = "<group>"; };
+		0D7EBC4E1E14609000642455 /* sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sample.swift; sourceTree = "<group>"; };
 		2500D1371E02E576007B6B2E /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2500D1391E02F063007B6B2E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2500D13B1E02F253007B6B2E /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -131,9 +133,10 @@
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				2500D1371E02E576007B6B2E /* SignInVC.swift */,
-				0D2106651E04B1C700C7C49B /* ClubsTableVC.swift */,
+				0D7EBC4E1E14609000642455 /* sample.swift */,
+				0D7EBC4A1E14595600642455 /* ClubsVC.swift */,
+				0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */,
 				2500D13B1E02F253007B6B2E /* RegisterVC.swift */,
-				0D21066A1E04BB6A00C7C49B /* ClubMainCell.swift */,
 				2500D13D1E02F2FA007B6B2E /* LoginVC.swift */,
 				2500D1391E02F063007B6B2E /* Constants.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
@@ -243,14 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D21066B1E04BB6A00C7C49B /* ClubMainCell.swift in Sources */,
 				2500D1441E02FEB2007B6B2E /* ProgressHUD.m in Sources */,
-				0D2106661E04B1C700C7C49B /* ClubsTableVC.swift in Sources */,
 				2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */,
 				2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				2500D13A1E02F063007B6B2E /* Constants.swift in Sources */,
 				2500D13E1E02F2FA007B6B2E /* LoginVC.swift in Sources */,
+				0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */,
+				0D7EBC4F1E14609000642455 /* sample.swift in Sources */,
+				0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
