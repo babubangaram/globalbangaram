@@ -10,9 +10,12 @@ import UIKit
 
 class ClubsTVCell: UITableViewCell {
 
-    @IBOutlet var clubLogoImage: UIImageView!
-    
+    @IBOutlet var clubLogoImage: UIImageView!    
     @IBOutlet var clubNameLabel: UILabel!
+    @IBOutlet var clubTypeLabel: UILabel!
+    @IBOutlet var clubIntroLabel: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

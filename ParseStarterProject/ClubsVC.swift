@@ -18,7 +18,14 @@ class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+//        self.ClubsVC.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"common_bg"]];
+//        self.tableView.backgroundColor = [UIColor clearColor];
+//        
+//        UIEdgeInsets.self; inset = UIEdgeInsetsMake(5, 0, 0, 0);
+//        self.tableView.contentInset = inset;
+        
        let clubQuery = PFQuery(className: "Club")
         
         clubQuery.findObjectsInBackground { (objects, error) in
@@ -36,7 +43,7 @@ class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
         }
        
-        print("pudiki")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +63,9 @@ class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let pfObject = self.clubsArray[indexPath.item] as PFObject
         
         cCell.clubNameLabel?.text = pfObject["ClubName"] as? String
+        cCell.clubTypeLabel?.text = pfObject["clubType"] as? String
+        cCell.clubIntroLabel.text = pfObject["ClubAddress"] as? String
+        
         let cImageFile = pfObject["clubLogo"] as? PFFile
         cImageFile?.getDataInBackground { (imageData, error) -> Void in
             
