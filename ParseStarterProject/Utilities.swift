@@ -12,7 +12,7 @@ class Utilities {
     
     class func loginUser(target: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let welcomeVC = storyboard.instantiateViewController(withIdentifier: "navigationVC") as! UINavigationController
+        let welcomeVC = storyboard.instantiateViewController(withIdentifier: "entryScreenVC") as! UINavigationController
         target.present(welcomeVC, animated: true, completion: nil)
         
     }

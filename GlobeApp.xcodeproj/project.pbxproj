@@ -101,6 +101,9 @@
 		255BDC051E155C2400348718 /* gallery260Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallery260Icon.png; sourceTree = "<group>"; };
 		255BDC071E155CFA00348718 /* event60Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event60Icon.png; sourceTree = "<group>"; };
 		255BDC091E1576EF00348718 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		255BDC0B1E157C8900348718 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		255BDC0E1E157CEF00348718 /* PushNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		255BDC101E157F9900348718 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +200,17 @@
 			name = icons30;
 			sourceTree = "<group>";
 		};
+		255BDC0D1E157CA100348718 /* MainUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				255BDC091E1576EF00348718 /* Utilities.swift */,
+				255BDC0B1E157C8900348718 /* Images.swift */,
+				255BDC0E1E157CEF00348718 /* PushNotification.swift */,
+				255BDC101E157F9900348718 /* Camera.swift */,
+			);
+			name = MainUtilities;
+			sourceTree = "<group>";
+		};
 		814C3AC51B69877600E307BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,11 +246,11 @@
 				2500D1371E02E576007B6B2E /* SignInVC.swift */,
 				0D7EBC4A1E14595600642455 /* ClubsVC.swift */,
 				0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */,
-				255BDC091E1576EF00348718 /* Utilities.swift */,
 				2500D13B1E02F253007B6B2E /* RegisterVC.swift */,
 				2500D13D1E02F2FA007B6B2E /* LoginVC.swift */,
 				2500D1391E02F063007B6B2E /* Constants.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				255BDC0D1E157CA100348718 /* MainUtilities */,
 			);
 			name = GlobeApp;
 			path = ParseStarterProject;
@@ -373,11 +387,14 @@
 				2500D1441E02FEB2007B6B2E /* ProgressHUD.m in Sources */,
 				2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */,
 				2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */,
+				255BDC0C1E157C8900348718 /* Images.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				2500D13A1E02F063007B6B2E /* Constants.swift in Sources */,
 				2500D13E1E02F2FA007B6B2E /* LoginVC.swift in Sources */,
 				255BDC0A1E1576F000348718 /* Utilities.swift in Sources */,
+				255BDC111E157F9900348718 /* Camera.swift in Sources */,
 				0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */,
+				255BDC0F1E157CEF00348718 /* PushNotification.swift in Sources */,
 				0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,7 @@
         <!--Sign InVC-->
         <scene sceneID="RBF-Bh-hOn">
             <objects>
-                <viewController id="grc-ah-rbg" customClass="SignInVC" customModule="GlobeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entryScreenVC" id="grc-ah-rbg" customClass="SignInVC" customModule="GlobeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZJw-51-cg9"/>
                         <viewControllerLayoutGuide type="bottom" id="1Of-bd-pKu"/>
