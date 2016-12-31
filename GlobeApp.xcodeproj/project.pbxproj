@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0D2106691E04B89C00C7C49B /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D2106681E04B89C00C7C49B /* images.jpeg */; };
+		0D484F991E1806D100C8F333 /* vcard front abs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D484F981E1806D100C8F333 /* vcard front abs.jpg */; };
+		0D48CE551E17C49400D91079 /* Global Wybes_logo_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D48CE531E17C49400D91079 /* Global Wybes_logo_main.png */; };
+		0D48CE561E17C49400D91079 /* mixer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D48CE541E17C49400D91079 /* mixer.jpeg */; };
 		0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4A1E14595600642455 /* ClubsVC.swift */; };
 		0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */; };
+		0D7EBC731E17166800642455 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC721E17166800642455 /* SignUpVC.swift */; };
 		2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1371E02E576007B6B2E /* SignInVC.swift */; };
 		2500D13A1E02F063007B6B2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1391E02F063007B6B2E /* Constants.swift */; };
 		2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D13B1E02F253007B6B2E /* RegisterVC.swift */; };
@@ -61,8 +65,12 @@
 
 /* Begin PBXFileReference section */
 		0D2106681E04B89C00C7C49B /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		0D484F981E1806D100C8F333 /* vcard front abs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vcard front abs.jpg"; sourceTree = "<group>"; };
+		0D48CE531E17C49400D91079 /* Global Wybes_logo_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Global Wybes_logo_main.png"; sourceTree = "<group>"; };
+		0D48CE541E17C49400D91079 /* mixer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpeg; sourceTree = "<group>"; };
 		0D7EBC4A1E14595600642455 /* ClubsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsVC.swift; sourceTree = "<group>"; };
 		0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsTVCell.swift; sourceTree = "<group>"; };
+		0D7EBC721E17166800642455 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2500D1371E02E576007B6B2E /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2500D1391E02F063007B6B2E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2500D13B1E02F253007B6B2E /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -145,6 +153,7 @@
 				255BDC021E1555BD00348718 /* icons30 */,
 				255BDBE91E154EF500348718 /* icons */,
 				0D2106681E04B89C00C7C49B /* images.jpeg */,
+				0D484F981E1806D100C8F333 /* vcard front abs.jpg */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -162,6 +171,8 @@
 		255BDBE91E154EF500348718 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				0D48CE531E17C49400D91079 /* Global Wybes_logo_main.png */,
+				0D48CE541E17C49400D91079 /* mixer.jpeg */,
 				255BDBD11E154EE000348718 /* bars60Icon.png */,
 				255BDBD21E154EE000348718 /* club60Icon.png */,
 				255BDBD31E154EE000348718 /* gallery60Icon.png */,
@@ -243,6 +254,7 @@
 			children = (
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				2500D1371E02E576007B6B2E /* SignInVC.swift */,
+				0D7EBC721E17166800642455 /* SignUpVC.swift */,
 				0D7EBC4A1E14595600642455 /* ClubsVC.swift */,
 				0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */,
 				2500D13B1E02F253007B6B2E /* RegisterVC.swift */,
@@ -370,6 +382,9 @@
 				255BDC081E155CFB00348718 /* event60Icon.png in Resources */,
 				255BDBFB1E1555AC00348718 /* logout30Icon.png in Resources */,
 				255BDBF81E1555AC00348718 /* gallery30Icon.png in Resources */,
+				0D48CE551E17C49400D91079 /* Global Wybes_logo_main.png in Resources */,
+				0D484F991E1806D100C8F333 /* vcard front abs.jpg in Resources */,
+				0D48CE561E17C49400D91079 /* mixer.jpeg in Resources */,
 				255BDBE51E154EE000348718 /* news60Icon.png in Resources */,
 				255BDBE81E154EE000348718 /* stars60Icon.png in Resources */,
 				2500D1431E02FEB2007B6B2E /* ProgressHUD.bundle in Resources */,
@@ -386,6 +401,7 @@
 				2500D1441E02FEB2007B6B2E /* ProgressHUD.m in Sources */,
 				2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */,
 				255BDC131E15846800348718 /* ProfileViewController.swift in Sources */,
+				0D7EBC731E17166800642455 /* SignUpVC.swift in Sources */,
 				2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				2500D13A1E02F063007B6B2E /* Constants.swift in Sources */,

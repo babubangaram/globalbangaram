@@ -8,12 +8,35 @@
 
 import UIKit
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
+
+  
+    @IBOutlet var emailTextField: UITextField!
+    
+    @IBOutlet var passwordField: UITextField!
+    
+    @IBAction func signInButtonPressed(_ sender: Any) {
+        
+        self.emailTextField.isHidden = false
+        self.passwordField.isHidden = false
+        self.emailTextField.becomeFirstResponder()
+        self.login()
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SignInVC.dismissKeyboard)))
+        self.emailTextField.delegate = self
+        self.passwordField.delegate = self
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.emailTextField.isHidden = true
+        self.passwordField.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,24 +44,35 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func facebookLogin(_ sender: UIButton) {
-        
-        
-        
-        
-        
-        
-        
+    func dismissKeyboard() {
+        self.view.endEditing(true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+     func login() {
+     let email = emailTextField.text!.lowercased()
+     let password = passwordField.text
+     
+     if email.characters.count == 0 {
+     ProgressHUD.showError("Username field is empty.")
+     return
+     } else {
+     ProgressHUD.showError("Password field is empty.")
+     }
+     
+     ProgressHUD.show("Signing in...", interaction: true)
+     PFUser.logInWithUsername(inBackground: email, password: password!) { (user, error) in
+       
+     if user != nil {
+    
+     ProgressHUD.showSuccess("Welcome back, \(user![PF_USER_FULLNAME])!")
+     self.dismiss(animated: true, completion: nil)
+     } else {
+    
+     ProgressHUD.showError("Invalid login parameters")
+     }
+        
+        }
+     }
+  
 
 }
