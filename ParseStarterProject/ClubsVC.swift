@@ -61,7 +61,7 @@ class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         cCell.clubNameLabel?.text = pfObject["ClubName"] as? String
         cCell.clubTypeLabel?.text = pfObject["clubType"] as? String
-        cCell.clubIntroLabel.text = pfObject["ClubAddress"] as? String
+       // cCell.clubIntroLabel.text = pfObject["ClubAddress"] as? String
         
         let cImageFile = pfObject["clubLogo"] as? PFFile
         cImageFile?.getDataInBackground { (imageData, error) -> Void in

@@ -16,12 +16,17 @@ class VenueDetailsVC: UIViewController {
     @IBOutlet var venueMainImage: UIImageView!
     
     @IBAction func galleryButtonPressed(_ sender: UIButton) {
+        
     }
     
     @IBAction func eventsButtonPressed(_ sender: UIButton) {
+        
+         performSegue(withIdentifier: "showEventSegue", sender: self)
     }
     
     @IBAction func offersButtonPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "showOffersSegue", sender: self)
     }
     
     @IBOutlet var venueDetailsLabel: UILabel!

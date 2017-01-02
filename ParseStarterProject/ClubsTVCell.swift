@@ -13,7 +13,7 @@ class ClubsTVCell: UITableViewCell {
     @IBOutlet var clubLogoImage: UIImageView!    
     @IBOutlet var clubNameLabel: UILabel!
     @IBOutlet var clubTypeLabel: UILabel!
-    @IBOutlet var clubIntroLabel: UILabel!
+   
     
     
     
