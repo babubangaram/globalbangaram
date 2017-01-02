@@ -35,7 +35,7 @@ let PF_USER_FULLNAME_LOWER				= "fullname_lower"          //	String
 let PF_USER_FACEBOOKID					= "facebookId"              //	String
 let PF_USER_PICTURE						= "picture"                 //	File
 let PF_USER_THUMBNAIL					= "thumbnail"               //	File
-let PF_Current_User                     = "_User"
+var PF_Current_User                     = "_User"
 
 var User = PFUser.current()
 

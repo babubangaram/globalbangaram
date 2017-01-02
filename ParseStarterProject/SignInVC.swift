@@ -65,7 +65,12 @@ class SignInVC: UIViewController, UITextFieldDelegate {
      if user != nil {
     
      ProgressHUD.showSuccess("Welcome back, \(user![PF_USER_FULLNAME])!")
-     self.dismiss(animated: true, completion: nil)
+     
+        User = PFUser.current()
+        self.performSegue(withIdentifier: "welcomeScreenVC", sender: self)
+        
+        self.dismiss(animated: true, completion: nil)
+        
      } else {
     
      ProgressHUD.showError("Invalid login parameters")

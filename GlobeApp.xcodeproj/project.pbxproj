@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0D2106691E04B89C00C7C49B /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D2106681E04B89C00C7C49B /* images.jpeg */; };
+		0D24D9DE1E1ACC57000FDFDE /* VenueEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24D9DD1E1ACC57000FDFDE /* VenueEventsVC.swift */; };
+		0D24D9E01E1ACCD4000FDFDE /* VenueEventsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24D9DF1E1ACCD4000FDFDE /* VenueEventsTVCell.swift */; };
+		0D24D9E21E1AD0C7000FDFDE /* VenueOffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24D9E11E1AD0C7000FDFDE /* VenueOffersVC.swift */; };
+		0D27B2B81E198E43007DEF4A /* OffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27B2B71E198E43007DEF4A /* OffersVC.swift */; };
 		0D484F991E1806D100C8F333 /* vcard front abs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D484F981E1806D100C8F333 /* vcard front abs.jpg */; };
 		0D48CE551E17C49400D91079 /* Global Wybes_logo_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D48CE531E17C49400D91079 /* Global Wybes_logo_main.png */; };
 		0D48CE561E17C49400D91079 /* mixer.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0D48CE541E17C49400D91079 /* mixer.jpeg */; };
 		0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4A1E14595600642455 /* ClubsVC.swift */; };
 		0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */; };
 		0D7EBC731E17166800642455 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7EBC721E17166800642455 /* SignUpVC.swift */; };
+		0D7FBC121E181EEB00DF8B7D /* VenueDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7FBC111E181EEB00DF8B7D /* VenueDetailsVC.swift */; };
+		0DF8D6271E197E22006E3746 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF8D6261E197E22006E3746 /* EventsVC.swift */; };
+		0DF8D6291E197E5E006E3746 /* EventsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF8D6281E197E5E006E3746 /* EventsTableCell.swift */; };
+		0DF8D62B1E198688006E3746 /* OffersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF8D62A1E198688006E3746 /* OffersViewCell.swift */; };
 		2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1371E02E576007B6B2E /* SignInVC.swift */; };
 		2500D13A1E02F063007B6B2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D1391E02F063007B6B2E /* Constants.swift */; };
 		2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2500D13B1E02F253007B6B2E /* RegisterVC.swift */; };
@@ -65,12 +73,20 @@
 
 /* Begin PBXFileReference section */
 		0D2106681E04B89C00C7C49B /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		0D24D9DD1E1ACC57000FDFDE /* VenueEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueEventsVC.swift; sourceTree = "<group>"; };
+		0D24D9DF1E1ACCD4000FDFDE /* VenueEventsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueEventsTVCell.swift; sourceTree = "<group>"; };
+		0D24D9E11E1AD0C7000FDFDE /* VenueOffersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueOffersVC.swift; sourceTree = "<group>"; };
+		0D27B2B71E198E43007DEF4A /* OffersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersVC.swift; sourceTree = "<group>"; };
 		0D484F981E1806D100C8F333 /* vcard front abs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "vcard front abs.jpg"; sourceTree = "<group>"; };
 		0D48CE531E17C49400D91079 /* Global Wybes_logo_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Global Wybes_logo_main.png"; sourceTree = "<group>"; };
 		0D48CE541E17C49400D91079 /* mixer.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mixer.jpeg; sourceTree = "<group>"; };
 		0D7EBC4A1E14595600642455 /* ClubsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsVC.swift; sourceTree = "<group>"; };
 		0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsTVCell.swift; sourceTree = "<group>"; };
 		0D7EBC721E17166800642455 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		0D7FBC111E181EEB00DF8B7D /* VenueDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailsVC.swift; sourceTree = "<group>"; };
+		0DF8D6261E197E22006E3746 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		0DF8D6281E197E5E006E3746 /* EventsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableCell.swift; sourceTree = "<group>"; };
+		0DF8D62A1E198688006E3746 /* OffersViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersViewCell.swift; sourceTree = "<group>"; };
 		2500D1371E02E576007B6B2E /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2500D1391E02F063007B6B2E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2500D13B1E02F253007B6B2E /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -156,6 +172,24 @@
 				0D484F981E1806D100C8F333 /* vcard front abs.jpg */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		0D24D9DB1E1ACB36000FDFDE /* Events Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DF8D6261E197E22006E3746 /* EventsVC.swift */,
+				0DF8D6281E197E5E006E3746 /* EventsTableCell.swift */,
+			);
+			name = "Events Controllers";
+			sourceTree = "<group>";
+		};
+		0D24D9DC1E1ACB56000FDFDE /* Offers Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DF8D62A1E198688006E3746 /* OffersViewCell.swift */,
+				0D27B2B71E198E43007DEF4A /* OffersVC.swift */,
+			);
+			name = "Offers Controllers";
 			sourceTree = "<group>";
 		};
 		2500D14D1E03011C007B6B2E /* ProgressHUD */ = {
@@ -257,6 +291,12 @@
 				0D7EBC721E17166800642455 /* SignUpVC.swift */,
 				0D7EBC4A1E14595600642455 /* ClubsVC.swift */,
 				0D7EBC4C1E145AB900642455 /* ClubsTVCell.swift */,
+				0D24D9DC1E1ACB56000FDFDE /* Offers Controllers */,
+				0D7FBC111E181EEB00DF8B7D /* VenueDetailsVC.swift */,
+				0D24D9DD1E1ACC57000FDFDE /* VenueEventsVC.swift */,
+				0D24D9E11E1AD0C7000FDFDE /* VenueOffersVC.swift */,
+				0D24D9DF1E1ACCD4000FDFDE /* VenueEventsTVCell.swift */,
+				0D24D9DB1E1ACB36000FDFDE /* Events Controllers */,
 				2500D13B1E02F253007B6B2E /* RegisterVC.swift */,
 				2500D13D1E02F2FA007B6B2E /* LoginVC.swift */,
 				2500D1391E02F063007B6B2E /* Constants.swift */,
@@ -398,17 +438,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF8D6271E197E22006E3746 /* EventsVC.swift in Sources */,
 				2500D1441E02FEB2007B6B2E /* ProgressHUD.m in Sources */,
+				0D24D9E01E1ACCD4000FDFDE /* VenueEventsTVCell.swift in Sources */,
+				0D7FBC121E181EEB00DF8B7D /* VenueDetailsVC.swift in Sources */,
 				2500D1381E02E576007B6B2E /* SignInVC.swift in Sources */,
 				255BDC131E15846800348718 /* ProfileViewController.swift in Sources */,
 				0D7EBC731E17166800642455 /* SignUpVC.swift in Sources */,
 				2500D13C1E02F253007B6B2E /* RegisterVC.swift in Sources */,
+				0D27B2B81E198E43007DEF4A /* OffersVC.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				2500D13A1E02F063007B6B2E /* Constants.swift in Sources */,
 				2500D13E1E02F2FA007B6B2E /* LoginVC.swift in Sources */,
 				255BDC0A1E1576F000348718 /* Utilities.swift in Sources */,
+				0D24D9E21E1AD0C7000FDFDE /* VenueOffersVC.swift in Sources */,
+				0DF8D62B1E198688006E3746 /* OffersViewCell.swift in Sources */,
 				0D7EBC4B1E14595600642455 /* ClubsVC.swift in Sources */,
 				0D7EBC4D1E145AB900642455 /* ClubsTVCell.swift in Sources */,
+				0DF8D6291E197E5E006E3746 /* EventsTableCell.swift in Sources */,
+				0D24D9DE1E1ACC57000FDFDE /* VenueEventsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,20 +11,17 @@ import UIKit
 
 class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var currentUser = PFUser.current()
     
     @IBOutlet var clubsTable: UITableView!
+    
+    var transObject:PFObject!
     
     var clubsArray = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        self.ClubsVC.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"common_bg"]];
-//        self.tableView.backgroundColor = [UIColor clearColor];
-//        
-//        UIEdgeInsets.self; inset = UIEdgeInsetsMake(5, 0, 0, 0);
-//        self.tableView.contentInset = inset;
         
        let clubQuery = PFQuery(className: "Club")
         
@@ -82,4 +79,35 @@ class ClubsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cCell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let indexPath = tableView.indexPathForSelectedRow
+        
+        //let currentCell = tableView.cellForRow(at: indexPath!) as! ClubsTVCell
+        
+        self.transObject = self.clubsArray[(indexPath?.item)!] as PFObject
+        
+        print(transObject)
+        
+        performSegue(withIdentifier: "clubDetails", sender: self)
+        
+        tableView.deselectRow(at: indexPath!, animated: true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+                if (segue.identifier == "clubDetails") {
+        
+                    let VC = segue.destination as! VenueDetailsVC
+                    VC.clubObject = transObject
+        
+        
+                    
+                }
+        
+    }
+
 }
