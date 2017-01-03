@@ -8,18 +8,26 @@
 
 import UIKit
 
-class VenueEventsVC: UIViewController {
+class VenueEventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var venueEventsTableView: UITableView!
     
     @IBOutlet var ClubLogo: UIImageView!
     
+    var clubString = String()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print("EventsVC Insisde ******************")
         
+        let veQuery = PFQuery(className: "Event")
+
+        veQuery.whereKey("clubName", equalTo: clubString)
+        var eventsObj = veQuery.getObjectInBackground(withId: clubString)
+        
+        print(eventsObj)
         
         // Do any additional setup after loading the view.
     }
@@ -29,6 +37,27 @@ class VenueEventsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
+    {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cCell = tableView.dequeueReusableCell(withIdentifier: "clubsCell", for: indexPath) as! ClubsTVCell
+        
+        
+        
+        return cCell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
+
 
     /*
      var currentObject: PFObject!

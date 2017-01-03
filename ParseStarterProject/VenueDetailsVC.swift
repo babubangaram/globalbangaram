@@ -17,16 +17,21 @@ class VenueDetailsVC: UIViewController {
     
     @IBAction func galleryButtonPressed(_ sender: UIButton) {
         
+        
     }
     
     @IBAction func eventsButtonPressed(_ sender: UIButton) {
         
-         performSegue(withIdentifier: "showEventSegue", sender: self)
+           print("EventsButton******************")
+        performSegue(withIdentifier: "showEventSegue", sender: self)
+        
     }
     
     @IBAction func offersButtonPressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "showOffersSegue", sender: self)
+        print("offersButton******************")
+        
+        //performSegue(withIdentifier: "showOffersSegue", sender: self)
     }
     
     @IBOutlet var venueDetailsLabel: UILabel!
@@ -65,8 +70,6 @@ class VenueDetailsVC: UIViewController {
         self.venueTypeLabel.text = clubObject["clubType"] as? String
         
         
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,6 +84,23 @@ class VenueDetailsVC: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if (segue.identifier == "showEventSegue") {
+            
+            let VC = segue.destination as! VenueEventsVC
+            VC.clubString = clubObject["ClubName"] as! String
+            
+            
+            
+            
+        } else if (segue.identifier == "showOffersSegue") {
+            
+            let VC = segue.destination as! VenueEventsVC
+            VC.clubString = clubObject["objectId"] as! String
+            
+            
+        }
+
+
         
 
     }
